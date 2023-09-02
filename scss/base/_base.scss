@@ -1,0 +1,55 @@
+/* =============
+    Base
+============= */
+body{
+    background-color: var(--blue);
+}
+
+.content-grid{
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". content .";
+
+    .content-grid-item{
+        background-color: var(--gray);
+        grid-area: content;
+
+    }
+}
+
+#main-content-grid{
+    @include lg{
+        display: grid;
+        grid-template-columns: 60% auto;
+    }
+}
+#main-content-right{
+
+    border: 1px solid var(--limegreen);
+    margin: 200px 16px 16px;
+    padding: 16px;
+
+    img{
+        width: 60px;
+    }
+    <style>
+    p.small {
+      line-height: 0.7;
+    }
+    </style>
+.social-icons{
+    li{
+
+   // love // hate
+   a:link, a:visited{
+    color:var(--fuschia);
+    text-decoration: none;
+}
+
+a:hover, a:active{
+color:var(--orange);
+}
+    }
+}
+
+}

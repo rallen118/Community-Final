@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/7cd2619779.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Week 1</title>
+</head>
+
+<body>
+    <main class="content-grid">
+        <div class="content-grid-item">
+    <header>
+        <a href="Index.html"><h1>Chisholm Valley Park</h1></a>
+            <p>The park of today.</p>
+            <style>ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: var(--fuschia);
+              }
+              
+              li {
+                float: left;
+              }
+              
+              li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+              }
+              
+              /* Change the link color to #111 (black) on hover */
+              li a:hover {
+                background-color: var(--teal);
+              }
+                </style>
+            <nav id="main-menu">
+                <ul>
+                    <li><a href="index.html"class="orangeLink">Home</a></li>
+                    <li><a href="Rental.html"class="orangeLink">Space Rental</a></li>
+                    <li><a href="Service.html"class="orangeLink">Service Requests</a></li>
+                    <li><a href="Calendar.html"class="orangeLink">Park Events</a></li>
+                    <li><a href="Gallery.html"class="orangeLink">Gallery</a></li>
+                    <li><a href="Updates.html"class="orangeLink">Park News</a></li>
+                    <li><a href="Contact.html"class="orangeLink">Contact</a></li>
+                    <li><a href="Location.html"class="orangeLink">Park Specifications</a></li>
+                </ul>
+            </nav>
+    </header>
+    <div id="main-content-grid">
+        <section id="index-left">
+
+             <style>
+                * {
+                  box-sizing: border-box;
+                }
+                
+                body {
+                  margin: 0;
+                  font-family: Arial;
+                }
+            
+                .column {
+                  float: left;
+                  width: 25%;
+                  padding: 5px;
+                }
+          
+                .column img {
+                  opacity: 0.8; 
+                  cursor: pointer; 
+                }
+                
+                .column img:hover {
+                  opacity: 1;
+                }
+                
+                .row:after {
+                  content: "";
+                  display: table;
+                  clear: both;
+                }
+                
+                .container {
+                  position: relative;
+                  display: none;
+                }
+          
+                #imgtext {
+                  position: absolute;
+                  bottom: 15px;
+                  left: 15px;
+                  color: white;
+                  font-size: 20px;
+                }
+                
+                .closebtn {
+                  position: absolute;
+                  top: 10px;
+                  right: 15px;
+                  color: white;
+                  font-size: 35px;
+                  cursor: pointer;
+                }
+                </style>
+               
+            <h1> Event Photo Gallery</h1>
+            
+        <<div style="text-align:center">
+            <h2>Tabbed Image Gallery</h2>
+            <p>Click on the images below:</p>
+          </div>
+          
+         
+          
+          <div class="row">
+            <div class="column">
+              <img src="img/Image1.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);"> 
+            </div>
+            <div class="column">
+              <img src="img/Image2.jpeg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+              <img src="img/Image3.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+              <img src="img/Image4.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
+            </div>
+          </div>
+          <div class="container">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <img id="expandedImg" style="width:100%">
+            <div id="imgtext"></div>
+          </div>
+          
+          <script>
+          function myFunction(imgs) {
+            var expandImg = document.getElementById("expandedImg");
+            var imgText = document.getElementById("imgtext");
+            expandImg.src = imgs.src;
+            imgText.innerHTML = imgs.alt;
+            expandImg.parentElement.style.display = "block";
+          }
+
+          </script> 
+    
+</section>
+
+        <aside id="main-content-right">
+            <img src="img/images-2.jpeg" alt="profile image of park">
+
+            <h2>Chisholm Valley Park</h2>
+
+            <p>301 Saddle Ridge Dr.</p>
+                <p>Round Rock, Texas 78664</p>
+               <p>Phone: 512-218-5540</p>
+               <p>Hours: 8 a.m. to 5 p.m., M-F</p>
+
+         <h2>Follow Us on Social Media!</h2>
+
+            <ul class="social-icons">
+                <li><a href="www.linkedin.com/in/rodessa-allen-b0a9511b4"><i class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+
+        </aside>
+    </div>
+        <Footer>
+            <section id="footer-right">
+
+            </section>
+
+            <section id="footer-left">
+                <a href="https://drexel.edu/cci/"> Drexel University College of Computing & Informatics</a>
+            </section>
+
+            <section id="footer-bottom">
+                <h3>Copyright © 2023 Rodessa Leena Allen All rights reserved.</h3>
+            </section>
+        </Footer>
+        </div>
+    </main>
+
+    <script src="js/scripts-dist.js"></script>
+</body>
+</html>

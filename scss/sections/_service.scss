@@ -1,0 +1,38 @@
+/* =============
+    Associations
+============= */
+#index-left{
+
+    h1{
+        padding-bottom: 24px;
+    }
+
+    #index-quote{
+        padding-left: 16px;
+    }
+ul{
+    list-style: bullet;
+}
+    p{
+        padding-bottom: 16px;
+    }
+    // love // hate
+    a:link, a:visited{
+        color:var(--orange);
+        text-decoration: none;
+
+    }
+
+}
+a:hover, a:active{
+    color:var(--white);
+
+}
+
+#main-content-right{
+    img{
+        width:100%;
+
+        
+    }
+}

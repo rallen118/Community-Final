@@ -1,0 +1,74 @@
+/* =============
+    Footer
+============= */
+footer{
+    background-color: var(--maroon);
+    @include md{
+        display: grid;
+        grid-template-columns: 50% auto;
+        grid-template-areas:
+    "fl fr"
+    "fb fb";
+    }
+
+    #footer-left{
+        @include md{
+            grid-area: fl;
+        }
+
+    }
+
+    #footer-right{
+        @include md{
+            grid-area: fr;
+        }
+
+    }
+
+    #footer-bottom{
+        @include md{
+            grid-area: fb;
+        }
+    }
+    #footer-bottom{
+        
+        text-align: center;
+        }
+        
+    #footer-bottom{
+        background-color:var(--green);
+           // love // hate
+   a:link, a:visited{
+    color:var(--fuschia);
+    text-decoration: none;
+}
+
+a:hover, a:active{
+color: var(--orange);
+}
+}
+#footer-right{
+    background-color:var(--blue);
+       // love // hate
+a:link, a:visited{
+color:var(--fuschia);
+text-decoration: none;
+}
+
+a:hover, a:active{
+color: var(--orange);
+}
+}
+#footer-left{
+    background-color:var(--blue);
+       // love // hate
+a:link, a:visited{
+color:var(--grey);
+text-decoration: none;
+}
+
+a:hover, a:active{
+color: var(--orange);
+}
+}
+}
