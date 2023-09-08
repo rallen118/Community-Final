@@ -1,5 +1,5 @@
 /* =============
-    About
+    Calendar
 ============= */
 #index-left{
 
@@ -10,23 +10,30 @@
     #index-quote{
         padding-left: 16px;
     }
-ul{
-    list-style: bullet;
-}
-    p{
-        padding-bottom: 16px;
+
+    /* Reset default list styles */
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
     }
-    // love // hate
-    a:link, a:visited{
-        color:var(--orange);
-        text-decoration: none;
-
+    
+    /* Center the navigation bar horizontally */
+    nav {
+      text-align: center;
     }
-
-}
-a:hover, a:active{
-    color:var(--white);
-
+    
+    /* Style the navigation bar links */
+    nav ul li {
+      display: inline-block;
+      margin-right: 20px; /* Add spacing between menu items */
+    }
+    
+    /* Highlight the current page link in black */
+    nav ul li a.active {
+      color: black;
+      font-weight: bold;
+    }
 }
 
 #main-content-right{
