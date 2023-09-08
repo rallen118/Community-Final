@@ -15,7 +15,7 @@
         <div class="content-grid-item">
     <header>
         <a href="Index.html"><h1>Chisholm Valley Park</h1></a>
-            <p>OThe park of today.</p>
+            <p>The park of today.</p>
             <style>ul {
                 list-style-type: none;
                 margin: 0;
@@ -43,21 +43,77 @@
                 </style>
             <nav id="main-menu">
                 <ul>
-                    <li><a href="index.html"class="orangeLink">Home</a></li>
-                    <li><a href="Rental.html"class="orangeLink">Space Rental</a></li>
-                    <li><a href="Service.html"class="orangeLink">Service Requests</a></li>
-                    <li><a href="Calendar.html"class="orangeLink">Park Events</a></li>
-                    <li><a href="Gallery.html"class="orangeLink">Gallery</a></li>
-                    <li><a href="Updates.html"class="orangeLink">Park News</a></li>
-                    <li><a href="Contact.html"class="orangeLink">Contact</a></li>
-                    <li><a href="Location.html"class="orangeLink">Park Specifications</a></li>
+                    <li><a href="index.html" class="orangeLink">Home</a></li>
+                    <li><a href="Rental.html" class="orangeLink">Space Rental</a></li>
+                    <li><a href="Service.html" class="orangeLink">Newsletter</a></li>
+                    <li><a href="Calendar.html" class="orangeLink">Park Events</a></li>
+                    <li><a href="Gallery.html" class="orangeLink">Gallery</a></li>
+                    <li><a href="Updates.html" class="orangeLink">Park News</a></li>
+                    <li><a href="Contact.html" class="orangeLink">Contact</a></li>
+                    <li><a href="Location.html" class="orangeLink">Location</a></li>
                 </ul>
             </nav>
     </header>
     <div id="main-content-grid">
         <section id="index-left">
-            <h1> Service Requests</h1>
-            <p>If you would like to submit a service request, please do so below.</p>
+            <style>
+                body {font-family: Arial, Helvetica, sans-serif;}
+                
+                form {
+                  border: 3px solid #f1f1f1;
+                  font-family: Arial;
+                }
+                
+                .container {
+                  padding: 20px;
+                  background-color: #f1f1f1;
+                }
+                
+                input[type=text], input[type=submit] {
+                  width: 100%;
+                  padding: 12px;
+                  margin: 8px 0;
+                  display: inline-block;
+                  border: 1px solid #ccc;
+                  box-sizing: border-box;
+                }
+                
+                input[type=checkbox] {
+                  margin-top: 16px;
+                }
+                
+                input[type=submit] {
+                  background-color: #04AA6D;
+                  color: white;
+                  border: none;
+                }
+                
+                input[type=submit]:hover {
+                  opacity: 0.8;
+                }
+                </style>
+                <body>
+                
+                <h2>CV Park Newsletter</h2>
+                
+                <form action="/action_page.php">
+                  <div class="container">
+                    <h2>Subscribe to our Newsletter</h2>
+                    <p>Stay informed on all park events, improvements, and services. Sign up for our newsletter today!</p>
+                  </div>
+                
+                  <div class="container" style="background-color:white">
+                    <input type="text" placeholder="Name" name="name" required>
+                    <input type="text" placeholder="Email address" name="mail" required>
+                    <label>
+                      <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+                    </label>
+                  </div>
+                
+                  <div class="container">
+                    <input type="submit" value="Subscribe">
+                  </div>
+                </form>
 
         </section>
 
@@ -71,27 +127,26 @@
                <p>Phone: 512-218-5540</p>
                <p>Hours: 8 a.m. to 5 p.m., M-F</p>
 
-         <h2>Follow Us on Social Media!</h2>
-
-            <ul class="social-icons">
-                <li><a href="www.linkedin.com/in/rodessa-allen-b0a9511b4"><i class="fa-brands fa-linkedin"></i></a></li>
-            </ul>
+        
 
         </aside>
     </div>
-        <Footer>
-            <section id="footer-right">
+    <Footer>
 
+        <section id="footer-left">
+            <a href="https://drexel.edu/cci/"> Drexel University College of Computing & Informatics</a>
+        </section>
+
+        <section id="footer-bottom">
+            <a href="https://validator.w3.org/nu/?doc=https://cvpark.netlify.app/" target="_blank">
+            <img src="img/html-logo.svg" alt="Valid HTML 5">
+            </a>
             </section>
 
-            <section id="footer-left">
-                <a href="https://drexel.edu/cci/"> Drexel University College of Computing & Informatics</a>
-            </section>
-
-            <section id="footer-bottom">
-                <h3>Copyright © 2023 Rodessa Leena Allen All rights reserved.</h3>
-            </section>
-        </Footer>
+        <section id="footer-right">
+            <h3>Copyright © 2023 Rodessa Leena Allen All rights reserved.</h3>
+        </section>
+    </Footer>
         </div>
     </main>
 
